@@ -64,7 +64,7 @@ task :cucumber => ["cucumber:rails2", "cucumber:rails3"]
 
 desc 'run tests for all supported versions of Rails'
 task :test_all do
-  %w(2.3.8 3.0.0.beta4).each do |version|
+  %w(2.3.10 3.0.3).each do |version|
     system("RAILS_VERSION=#{version} rake -s test;")
   end
 end

@@ -3,7 +3,7 @@ require 'test/unit'
 
 ENV['RAILS_ENV'] = 'test'
 
-ENV['RAILS_VERSION'] ||= '2.3.8'
+ENV['RAILS_VERSION'] ||= '2.3.10'
 RAILS_GEM_VERSION = ENV['RAILS_VERSION']
 
 if ENV['RAILS_VERSION'].to_s =~ /^2/

@@ -1,11 +1,11 @@
 When /^I generate a new rails application$/ do
   @terminal.cd(TEMP_ROOT)
-  @terminal.run("rails _3.0.0.beta4_ new #{APP_NAME}")
+  @terminal.run("rails _3.0.3_ new #{APP_NAME}")
   steps %{
     When I save the following as "Gemfile"
       """
       source "http://rubygems.org"
-      gem 'rails', '3.0.0.beta4'
+      gem 'rails', '3.0.3'
       gem 'sqlite3-ruby', :require => 'sqlite3'
       """
   }

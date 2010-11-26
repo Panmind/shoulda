@@ -1,7 +1,7 @@
 When /^I generate a new rails application$/ do
   load_rails = <<-RUBY
-    gem 'rails', '2.3.8'; \
-    load Gem.bin_path('rails', 'rails', '2.3.8')
+    gem 'rails', '2.3.10'; \
+    load Gem.bin_path('rails', 'rails', '2.3.10')
   RUBY
 
   @terminal.cd(TEMP_ROOT)
